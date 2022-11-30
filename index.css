@@ -69,14 +69,18 @@ header{
 }
 
 #screen{
-    width: 1500px;
+    width: 100%;
     height: 850px;
     margin-top: 64px;
     background-image: url(img/main\ section\ img.jpg);
     background-position: cover cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .screen-text {
- 
+    background-color: #fff;
+    justify-content: center;
+    vertical-align: bottom;
 }
