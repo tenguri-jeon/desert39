@@ -5,82 +5,59 @@
     --magin-graycolor:#c0c0c0;
 }
 
-.text-hide{
-position: absolute;
+.hide-text{
+  position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(0px 0px 99.9% 99.9%);
   overflow: hidden;
   height: 1px;
   width: 1px;
-
 }
+
 
 header{
-    max-width: 1525px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width: 1000px;
-}
-
-.header-wrapper{
-    display: block;
-}
-
-.basic-menu-bar{
-    display: flex;
-}
-
-.basic-menu-bar>li{
-    padding: 0 20px;
-}
-
-.basic-menu-bar a {
-   font-size: 17px;
-   color: var(--main-blackcolor1);
-}
-
-.header-logo {
- width: 46.91px;
- height: 70px;    
-}
-
-.community-menu-bar{
-    display: flex;
-}
-
-.community-menu-bar>li{
-    padding: 0 20px;
-}
-
-.community-menu-bar a {
-    color: var(--main-blackcolor1);
-    font-size: 17px;
-}
-
-.sns-menu-bar figure{
-    width: 18px;
-    height: 18px;
-}
-
-.sns-menu-bar{
-    display: flex;
-}
-
-#screen{
     width: 100%;
-    height: 850px;
-    margin-top: 64px;
-    background-image: url(img/main\ section\ img.jpg);
-    background-position: cover cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
     position: relative;
+    height: 100px;
 }
 
-.screen-text {
-    background-color: #fff;
-    justify-content: center;
-    vertical-align: bottom;
+.left-header{
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+
+.right-header-wrapper{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.header-logo{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.header-sns-wrapper{
+    display: flex;
+}
+
+.header-sns-wrapper svg{
+    width: 100%;
+    height: 100%;
+}
+
+.header-sns-wrapper a{
+    /* a는 block넣어주기 */
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+nav a {
+    color: var(--main-blackcolor1);
 }
