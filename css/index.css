@@ -16,21 +16,27 @@
 
 
 header{
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    box-sizing: border-box;
 }
 nav{
     display: flex;
     position: relative;
-    height: 100px;
+    text-align: center;
+    height: 100%;
 }
 
 .left-header{
     display: flex;
     position: absolute;
     left: 0;
+    gap: 32px;
 }
 
 .right-header-wrapper{
+    gap: 32px;
     display: flex;
     position: absolute;
     right: 0;
@@ -40,10 +46,15 @@ nav{
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
+    width: 53px;
+    height: 80px;
 }
+
 
 .header-sns-wrapper{
     display: flex;
+    padding-top: 20px;
+    align-items: center;
 }
 
 .header-sns-wrapper svg{
@@ -56,8 +67,45 @@ nav{
     display: block;
     width: 20px;
     height: 20px;
+    padding-top: 10px;
+}
+
+.header-sns-wrapper:nth-child(3){
+    width: 28px;
+    height: 28px;
+}
+    
+.header-wrapper{
+    text-align: start;
+}
+
+.nav-tittle{
+    padding-top: 24px;
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 32px;
+}
+
+.inner-nav{
+    display: none;
+    margin-top: 24px;
+}
+.inner-nav > li{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 nav a {
     color: var(--main-blackcolor1);
 }
+
+.active{
+    width: 165px;
+}
+
+.main-slide-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
