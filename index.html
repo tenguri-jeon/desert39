@@ -10,6 +10,7 @@
 </head>
 <body>
     <header >
+        <!-- 네비게이션 정렬 이렇게 하는게 맞나요? -->
         <nav >
             <div class="left-header">
                 <ul class="header-wrapper">
@@ -51,6 +52,7 @@
                 </div>
 
                 <h1 class="header-logo">
+                    <!-- hide-text 넣으면 그림도 같이 없어져요 -->
                     <span>dessert39</span>
                     <a href="#" class ='unit-link'> 
                         <?xml version="1.0" encoding="utf-8"?>
@@ -141,6 +143,7 @@
                         </ul>
                     </ul>
                 <ul class="header-sns-wrapper">
+                    <!-- 유튜브, 네이버, 틱톡 크기 못맞추겠어요... -->
                     <li> 
                         <a href="#">
                             <span class="hide-text">
@@ -294,16 +297,26 @@
     <section id="main-slide-area">
         <div class="main-slide-wrapper">
             <ul class="contents-wrwapper">
-                <li class="content">
-                    <figure>
-                        <img src="img/main-slide/56.jpg" alt=""거북이가 헤엄치는 사진>
+                <li class="content main-first-slide">
                         <div class="main-slide-text">
-                            <p>dessert_Deseert</p>
-                            <h2></h2>
-                            <p></p>
+                            <p>#dessert39_Deseert</p>
+                            <h2>지구살리기 <br>
+                                캠패인에 <br>
+                                동참해주세요!
+                            </h2>
+                            <p class="content-explane">
+                                디저트39에서 제공되는 컵은 친환경 인증된 <br>
+                                리유저블 다회용 텀블러입니다.
+                            </p>
                         </div>
-                    </figure>
+                        <!-- read more 넣어주기
+                        div. reade-more-box
+                            div.read-more
+                            span read-more
+                        
+                        -->
                 </li>
+                <!-- li사이에 div넣으면 안되는데,,,이럴 경우엔 어떻게 하죠?? -->
                 <li class="content">
                     <figure>
                         <img src="img/main-slide/59.jpg" alt="">
@@ -345,11 +358,6 @@
                     </figure>
                 </li>
             </ul>
-            <div class="read-more-box">
-                <a href="#">
-                    <span class="read-more">READ MORE</span>
-                </a>
-            </div>
             <div class="button-wrapper">
                 <p>1 / 29</p>
             </div>
@@ -362,7 +370,8 @@
     </section>
 
     <section id="eco-strory">
-        <h3>dessert 친환경 이야기</h3>
+        <h3>Dessert 친환경 이야기</h3>
+        <!-- after에 100%를 주면 넘어가고 h3에 블럭을 넣으면 가운데 졍렬이 안돼요. -->
 
         <ul class="about-ecostory">
             <li class="eco-tittle"> 
