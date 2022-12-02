@@ -6,27 +6,30 @@
 }
 
 .hide-text{
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(0px 0px 99.9% 99.9%);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
 }
 
 
 header{
-    max-width: 1300px;
     margin: 0 auto;
     height: 100px;
     box-sizing: border-box;
-    width: 95%;
+    width: 100%;
+    padding: 0 2vw;
+
 }
 nav{
     display: flex;
     position: relative;
     text-align: center;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-header{
@@ -41,13 +44,9 @@ nav{
     display: flex;
     position: absolute;
     right: 0;
-    transform: translateX(-10%);
 }
 
 .header-logo{
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
     width: 53px;
     height: 80px;
 }
@@ -55,8 +54,8 @@ nav{
 
 .header-sns-wrapper{
     display: flex;
-    padding-top: 20px;
     align-items: center;
+    gap: 8px;
 }
 
 .header-sns-wrapper svg{
@@ -70,11 +69,6 @@ nav{
     width: 20px;
     height: 20px;
     padding-top: 10px;
-}
-
-.header-sns-wrapper:nth-child(3){
-    width: 28px;
-    height: 28px;
 }
     
 .header-wrapper{
@@ -175,13 +169,15 @@ nav a {
 
 #eco-strory{
     margin: 0 auto;
+    max-width: 1700px;
+    padding: 71px;
 }
 
 #eco-strory > h3{
     font-size: 60px;
     font-weight: 900;
-    display: flex;
-    justify-content: center;
+    display: block;
+    width: fit-content;
     margin: 0 auto;
     position: relative;
 }
@@ -195,4 +191,178 @@ nav a {
     position: absolute;
     height: 15px;
     bottom: 0;
+}
+
+.about-ecostory{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    gap: 24px;
+    margin-bottom: 64px;
+}
+
+.eco-tittle{
+    padding: 8px 32px;
+    background-color: #fff;
+    border: 2px solid var(--main-blackcolor1);
+    border-radius: 40px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.eco-tittle > a{
+    color: var(--main-blackcolor1);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.click-area{
+    background-color: var(--main-blackcolor1);
+}
+
+.click-area > a{
+    color: #fff;
+}
+
+
+.eco-story-explane{
+    display: flex;
+}
+
+.eco-story-text{
+    color: var(--main-blackcolor1);
+    flex-basis: 35%;
+}
+
+.eco-story-text:first-of-type p {
+    font-weight: 900;
+    margin-top: 24px;
+}
+
+.eco-tittle-name{
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 24px;
+    line-height: 32px;
+}
+
+.ecostory-text{
+    display: block;
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.read-more{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.read-more:hover + .read-more:first-child span{
+    opacity: 50%;
+}
+
+.read-more:hover + .arrow>svg{
+    transform: translateX(50%);
+}
+
+.read-more > span{
+    color: var(--main-blackcolor1);
+    margin-top: 32px;
+    display: flex;
+    font-weight: 800;
+}
+
+.arrow{
+    width: 56px;
+    height: 56px;
+    position: relative;
+    z-index: 100;
+}
+
+.arrow::before{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: var(--magin-graycolor);
+    content: '';
+    display: block;
+    border-radius: 50%;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    opacity: 30%;
+}
+
+.read-more > svg{
+   width: 100%;
+}
+
+.eco-stoty-img{
+    flex-basis: 65%;
+    height: 450px;
+    background-image: url(../img/eco-area.jpg);
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-basis: 65;
+}
+
+.eoc-story-img-explane-wrapper{
+    padding: 24px;
+}
+
+.eco-story-img-tittle-wrawpper{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.eco-story-img-tittle-wrawpper p {
+    color: #fff;
+}
+
+.green-text{
+    color: var(--main-greencolor1);
+}
+
+.get-green-us-img > figure{
+    width: 40%;
+    flex-basis: 35;
+}
+
+.get-green-us-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.eoc-story-img-expalne{
+    color: #fff;
+}
+
+.about-greenus{
+    margin-top: 64px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.about-greenus::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.eoc-story-img-expalne:last-child p {
+    line-height: 24px;
+    margin-top: 16px;
 }
