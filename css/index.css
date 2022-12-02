@@ -156,6 +156,8 @@ nav a {
     font-weight: 900;
 }
 
+read
+
 .read-more-box{
     width: 182px;
     height: 56px;
@@ -165,6 +167,28 @@ nav a {
     left: 0;
     top: -50%;
     z-index: 1;
+}
+
+.main-read-more{
+    width: 183px;
+    height: 56px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 70%;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.main-read-more:first-of-type span{
+    color: var(--main-blackcolor1);
+    font-weight: 900;
+}
+
+.main-read-more svg{
+    width: 50px;
+    position: relative;
 }
 
 #eco-strory{
@@ -313,10 +337,7 @@ nav a {
     background-size: cover;
     display: flex;
     flex-basis: 65;
-}
-
-.eoc-story-img-explane-wrapper{
-    padding: 24px;
+    padding: 50px;
 }
 
 .eco-story-img-tittle-wrawpper{
@@ -333,9 +354,13 @@ nav a {
     color: var(--main-greencolor1);
 }
 
-.get-green-us-img > figure{
-    width: 40%;
+.get-green-us-img{
     flex-basis: 35;
+}
+
+.get-green-us-img > figure{
+    width: 100%;
+
 }
 
 .get-green-us-img img{
