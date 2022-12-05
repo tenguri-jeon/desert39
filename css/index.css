@@ -21,8 +21,9 @@ header{
     box-sizing: border-box;
     width: 100%;
     padding: 0 2vw;
-
+    background-color: var(--main-whitecolor1);
 }
+
 nav{
     display: flex;
     position: relative;
@@ -129,6 +130,8 @@ nav a {
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
+    background-position: center center;
+    background-size: cover;
 }
 
 .main-slide-text{
@@ -663,4 +666,47 @@ read
 
 .fixed-number{
     font-size: 40px;
+}
+
+/* 크기를 미디어 때마다 height를 주는게 맞는지? */
+@media screen and (max-width : 1200px) {
+    .main-slide-text{
+        background-color: #fff;
+        color: var(--main-blackcolor1);
+        position: absolute;
+        bottom: 0;
+        top: 20%;
+        padding: 20px;
+        left: 1%;
+    }
+
+    .contents-wrwapper{
+        height: 600px;
+    }
+
+    .main-slide-text h2{
+        font: 40px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header-wrapper{
+        display: none;
+    }
+
+    .header-logo{
+        position: absolute;
+        left: 0;
+        transform: translateX(50%);
+    }
+
+    .contents-wrwapper{
+        height: 520px;
+    }
+
+    .main-slide-text h2{
+        font: 35px;
+        line-height: 45px;
+    }
 }
