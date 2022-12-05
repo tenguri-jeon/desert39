@@ -400,6 +400,10 @@ read
 }
 
 
+#dessert39-desert{
+    padding-top: 64px;
+}
+
 #dessert39-desert > h3{
     font-size: 60px;
     font-weight: 900;
@@ -436,6 +440,7 @@ read
 .dessert39-slide-wrapper{
     max-width: 1440px;
     margin: 0 auto;
+    padding-bottom: 32px;
 }
 
 .dessert39-menu-wrapper{
@@ -447,4 +452,215 @@ read
 
 .deseert39-menu{
     width: calc(100% / 4);
+}
+
+.more-view{
+    width: 140px;
+    display: flex;
+    border: 2px solid var(--main-blackcolor1);
+    border-radius: 20px;
+    justify-content: center;
+    padding: 10px;
+    color: var(--main-blackcolor1);
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.desert-slide-navigation{
+    max-width: 1200px;
+    height: 2px;
+    background-color: var(--magin-graycolor);
+    margin: 0 auto;
+    position: relative;
+}
+
+.navigation-black-bar{
+    position: absolute;
+    width: 40%;
+    background-color: var(--main-blackcolor1);
+    height: 2px;
+    margin: 0 auto;
+}
+
+#dessert-dirnks{
+    padding-top: 88px;
+}
+
+#dessert-dirnks > h3{
+    font-size: 60px;
+    font-weight: 900;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 64px;
+}
+
+#dessert-dirnks > h3::before{
+    content: '';
+    display: block;
+    background-color: var(--main-blackcolor1);
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 20%;
+}
+
+.sale-thumbler{
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+#dessert39-introduction{
+    padding-top: 64px;
+    padding: 71px;
+}
+
+#dessert39-introduction>h3{
+    display: block;
+    margin: 0 auto;
+    font-size: 60px;
+    position: relative;
+    font-weight: 900;
+    width: fit-content;
+}
+
+#dessert39-introduction>h3::before{
+    content: '';
+    display: block;
+    background-color: var(--main-blackcolor1);
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 20%;
+}
+
+.location{
+    flex-basis: 50%;
+    padding-right: 50px;
+    border-right: 1.5px solid var(--magin-graycolor);
+}
+
+.introduction-wrapper{
+    padding-top: 64px;
+    display: flex;
+    max-width: 1700px;
+}
+
+.dessert39-introduction-area img{
+    width: 100%;
+}
+
+.dessert39-introduction-area > figure{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.competitive{
+    flex-basis: 50%;
+    padding-left: 50px;
+}
+
+.dessert39-introduction-area-text{
+    font-size: 32px;
+    font-weight: 800;
+    padding: 24px 0px;
+}
+
+.dessert39-introduction-area-text-explane{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+#dessert39-store-tnterior{
+    display: flex;
+    padding: 71px;
+    max-width: 1700px;
+}
+
+.interior-slide-wrapper{
+    flex-basis: 50%;
+}
+
+.interior-text-wrapper{
+    flex-basis: 50%;
+}
+
+.interior-wrapper img{
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.interior-wrapper > li{
+    flex-shrink: 0;
+    width: 100%;
+    
+}
+
+.interior-wrapper{
+    display: flex;
+}
+
+.interior-slide-container{
+    width: 540px;
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+
+.interior-text-wrapper > h3{
+    width: fit-content;
+    display: block;
+    font-size: 60px;
+    margin: 0 auto;
+    font-weight: 900;
+    position: relative;
+}
+
+.interior-text-wrapper > h3::before{
+    content: '';
+    display: block;
+    background-color: var(--main-blackcolor1);
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 20%;
+}
+
+.interior-logo{
+    width: 100%;
+    height: 210px;
+    display: inline-block;
+}
+
+.interior-butoon-logo-wrapper{
+    display: flex;
+}
+
+.interior-number{
+    display: felx;
+}
+
+.change-number{
+    font-size: 40px;
+}
+
+.fixed-number{
+    font-size: 40px;
 }
