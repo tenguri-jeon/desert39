@@ -130,7 +130,6 @@ nav a {
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
-    background-position: center center;
     background-size: cover;
 }
 
@@ -292,6 +291,16 @@ read
     font-weight: 500;
 }
 
+.event-news > li {
+    position: relative;
+}
+
+.eco-text-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
 .read-more{
     display: flex;
     align-items: center;
@@ -340,7 +349,6 @@ read
 
 .eco-stoty-img{
     flex-basis: 65%;
-    height: 450px;
     background-image: url(../img/eco-area.jpg);
     background-position: 50% center;
     background-repeat: no-repeat;
@@ -679,6 +687,9 @@ read
         padding: 20px;
         left: 1%;
     }
+    .main-slide-wrapper{
+        width: 100%;
+    }
 
     .contents-wrwapper{
         height: 600px;
@@ -687,6 +698,20 @@ read
     .main-slide-text h2{
         font: 40px;
         line-height: 50px;
+    }
+
+    #eco-strory{
+        padding: 16px;
+    }
+
+    .eco-stoty-img{
+        flex-direction: column;
+        margin-right: 10%;
+    }
+    
+    .get-green-us-img img{
+        width: 50%;
+        height: 50%;
     }
 }
 
